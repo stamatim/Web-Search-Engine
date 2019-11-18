@@ -1,6 +1,9 @@
 package api;
+import pa1.WebGraph;
+
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Map;
 
 /**
  * Abstract representation of a directed graph with generic vertex type.
@@ -50,6 +53,8 @@ public interface Graph<E> {
      *   list of incoming edges
      */
     public List<Integer> getIncoming(int index);
+
+    Map<Object, Object> getGraphMap();
 }
 
 

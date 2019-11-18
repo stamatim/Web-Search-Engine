@@ -5,8 +5,8 @@ package api;
  * @param <E>
  */
 public class TaggedVertex<E> {
-    private final E vertexData;
-    private final int tagValue;
+    private final E vertexData; // vertex data
+    private final int tagValue; // incoming edges
 
     /**
      * Constructs a TaggedVertex with the given data and value.
@@ -33,5 +33,4 @@ public class TaggedVertex<E> {
     public int getTagValue() {
         return tagValue;
     }
-
 }
